@@ -1,7 +1,7 @@
 const express = require('express');
 const { celebrate, Segments, Joi } = require('celebrate');
 const OngController = require('./controllers/OngController');
-const incidentsController = require("./controllers/incidentsController");
+const IncidentsController = require("./controllers/IncidentsController");
 const ProfileController = require("./controllers/ProfileController");
 const SessionController = require("./controllers/SessionController");
 const routes = express.Router();
@@ -42,12 +42,12 @@ routes.get("/incidents", celebrate({
     [Segments.QUERY]: Joi.object().keys({
         page: Joi.number(),
     })
-}), incidentsController.index);
-routes.post("/incidents", incidentsController.create);
+}), IncidentsController.index);
+routes.post("/incidents", IncidentsController.create);
 routes.delete("/incidents/:id", celebrate({
     [Segments.PARAMS]: Joi.object().keys({
         id: Joi.number().required(),
     })
-}), incidentsController.delete);
+}), IncidentsController.delete);
 
 module.exports = routes;
