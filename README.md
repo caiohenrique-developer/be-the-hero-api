@@ -46,7 +46,7 @@ This project was developed at the [RocketSeat OmniStack 11](https://rocketseat.c
 
 In order to use and test this project locally, you should've already setup the development environment.
 
-## [🔝](#top) How To Useb :grey_question:
+## [🔝](#top) How To Use :grey_question:
 
 To clone and run this application locally, you'll need [Git](https://git-scm.com), [Node.js v10.16][nodejs] or higher + [Yarn v1.13][yarn] or higher installed on your computer.
 
